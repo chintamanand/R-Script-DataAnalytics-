@@ -103,3 +103,5 @@ cat("The value present in the variable will be:",var.1,"\n")
 cat("The value present in the variable will be:",var.2,"\n")
 #it will print all the avaible variables
 print(ls())
+# it will print the variable having particular pattern var
+print(ls(pattern = "var")) 
