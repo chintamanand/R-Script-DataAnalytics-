@@ -1,1 +1,10 @@
+squareroot<-function(x,y,z){
+  posroot<-((-y) + sqrt((y^2) - 4 * x * z)) / (2*x);
+  negroot<-((-y) + sqrt((y^2) - 4 * x * z)) / (2*x);
+  print(posroot)
+  print(negroot)
+  }
+
+squareroot(4,12,3)
+
 
