@@ -15,3 +15,5 @@ bmi<-cbind(height,weight)
 write.csv(bmi,file = "BMI.csv",row.names = FALSE)
 
 plot(iris$Sepal.Length,iris$Sepal.Length,col=iris$Species)
+
+png("Sample.png",width=500,height=500,res=72)
