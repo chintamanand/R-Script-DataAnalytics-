@@ -1,5 +1,5 @@
 #logistic Regression
-
+#mtcars is present in R-Studio
 attach(mtcars)
 head(mtcars)
 
