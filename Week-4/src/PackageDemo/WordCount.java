@@ -1,5 +1,5 @@
 package PackageDemo;
-
+//word Count in hadoop MapReduce
 
 import java.io.IOException;
 import org.apache.hadoop.conf.Configuration;
