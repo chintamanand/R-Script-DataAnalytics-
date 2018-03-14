@@ -1,6 +1,7 @@
 #Tweet Analysis
 install.packages("RColorBrewer")
 
+install.packages("SnowballC")
 install.packages("tm")
 install.packages("wordcloud")
 install.packages('base64enc')
@@ -16,7 +17,7 @@ library(ROAuth)
 library(plyr)
 library(stringr)
 library(base64enc)
-install.packages("SnowballC")
+
 library(SnowballC)
 library(tm)
 
@@ -31,15 +32,13 @@ accessURL <- "https://api.twitter.com/oauth/access_token"
 # Set constant authURL
 authURL <- "https://api.twitter.com/oauth/authorize"
 
+#Give Ur Unique ID's(From Twitter API)
 consumerKey <- "   "
 consumerSecret <- "  "
 accessToken <- "  "
 accessTokenSecret <- "  "
 
-setup_twitter_oauth(consumerKey,
-                    consumerSecret,
-                    accessToken,
-                    accessTokenSecret)
+setup_twitter_oauth(consumerKey,consumerSecret,accessToken,accessTokenSecret)
 
 accessToken <- "  "
 #Specify the Twitter Account name ,Number of Tweets Depends on the Twitter API.
@@ -60,10 +59,11 @@ insta_text <- sapply(insta, function(x) x$getText())
 
 #a way to store the Documents in R
 insta_text_corpus <- Corpus(VectorSource(insta_text))
+# COnverting Data to LowerCase Letters
 insta_text_corpus <- tm_map(insta_text_corpus, content_transformer(tolower))
 #Data Cleaning
 insta_text_corpus <- tm_map(insta_text_corpus, removePunctuation)
-
+#These are some STOPWORDS
 insta_text_corpus <- tm_map(insta_text_corpus, removeWords, c("RT", "are","that","is"))
 
 #Remove URL
