@@ -31,17 +31,17 @@ accessURL <- "https://api.twitter.com/oauth/access_token"
 # Set constant authURL
 authURL <- "https://api.twitter.com/oauth/authorize"
 
-consumerKey <- "yVGUxYZG1Ynm0nobBA0yWkQrQ"
-consumerSecret <- "LM77745elA46zvyEVEgl8rguywXBeEUQKTJr2szniRYWTZXoZl"
-accessToken <- "2454630512-6jDtAQyUzdO8dZUoQodmlsOgWlhHcYJDbNxuDj0"
-accessTokenSecret <- "OaU3ivvIe6smoRvHDVaRsqsEUsFPenIsAU6NPSpd9HmGe"
+consumerKey <- "   "
+consumerSecret <- "  "
+accessToken <- "  "
+accessTokenSecret <- "  "
 
 setup_twitter_oauth(consumerKey,
                     consumerSecret,
                     accessToken,
                     accessTokenSecret)
 
-accessToken <- "2454630512-6jDtAQyUzdO8dZUoQodmlsOgWlhHcYJDbNxuDj0"
+accessToken <- "  "
 #Specify the Twitter Account name ,Number of Tweets Depends on the Twitter API.
 # Specify the Language.
 #Objectname <- searchTwitter("https://twitter.com/instagram", n=20, lang=NULL)
