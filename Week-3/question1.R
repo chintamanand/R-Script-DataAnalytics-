@@ -28,3 +28,5 @@ print(next_table[stupid,])
 relevant=which(as.Date(retail$InvoiceDate)>="31/03/11" & as.Date(retail$InvoiceDate)<="01/07/11")
 print(relevant)
 
+
+
