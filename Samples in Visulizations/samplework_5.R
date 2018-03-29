@@ -4,6 +4,7 @@ plot(1,5)
 #Sample Graph
 height<-cbind(90,103,100,123,150,185)
 weight<-cbind(65,50,55,60,75,85)
+
 #histogram
 plot(height,weight,type = "h" ,xlab = "height",ylab = "weight")
 #line plot
