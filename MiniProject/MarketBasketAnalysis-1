@@ -1,0 +1,47 @@
+#install.packages("arules")
+# Load the libraries
+library(arules)
+#install.packages("arulesViz")
+library(arulesViz)
+library(datasets)
+
+# Load the data set
+data(Groceries)
+View(Groceries)
+
+# Create an item frequency plot for the top 20 items
+itemFrequencyPlot(Groceries,topN=20,type="absolute")
+
+#here we are setting some support(0.01) and confidence(0.8) Values  
+#such that the product which satisfy these values 
+rules <- apriori(Groceries, parameter = list(supp = 0.001, conf = 0.8))
+
+# Show the top 5 rules, but only 2 digits
+options(digits=2)
+inspect(rules[1:5])
+
+#we are sorting according to the confidence
+rules <- apriori(Groceries, parameter = list(supp = 0.001, conf = 0.8))
+rules<-sort(rules,decreasing=TRUE, by="confidence")
+inspect(rules[1:5])
+
+#this is the Rule having the support=0.01 ,confidence=0.8 and maximum length=3
+rules <- apriori(Groceries, parameter = list(supp = 0.001, conf = 0.8,maxlen=3))
+options(digits=2)
+inspect(rules[1:5])
+
+#this rule gives 5 tuples having the wholemilk in the RHSide with support=0.01 and confidence=0.08
+rules<-apriori(data=Groceries, parameter=list(supp=0.001,conf = 0.08), 
+               appearance = list(default="lhs",rhs="whole milk"),
+               control = list(verbose=F))
+rules<-sort(rules, decreasing=TRUE,by="confidence")
+inspect(rules[1:5])
+
+#this rule gives 5 tuples having the wholemilk in the LHSide with support=0.001,minlen=2 and confidence=0.15
+rules<-apriori(data=Groceries, parameter=list(supp=0.001,conf = 0.15,minlen=2), 
+               appearance = list(default="rhs",lhs="whole milk"),
+               control = list(verbose=F))
+rules<-sort(rules, decreasing=TRUE,by="confidence")
+inspect(rules[1:5])
+
+plot(rules,method="graph",interactive=TRUE,shading=NA)
