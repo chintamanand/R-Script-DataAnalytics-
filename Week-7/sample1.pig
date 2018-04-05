@@ -1,3 +1,4 @@
+
 Lines= LOAD 'movieLensFile' AS (line: chararray); 
 
 Words = FOREACH Lines GENERATE FLATTEN (TOKENIZE (line)) AS word;
