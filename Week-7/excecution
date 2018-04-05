@@ -1,0 +1,13 @@
+hduser@MIT-ICT-LAB8-05:/usr/local/pig/bin$ 
+hduser@MIT-ICT-LAB8-05:/usr/local/pig/bin$ ./pig /home/student3/140911308/lab6/
+17/10/06 09:44:13 INFO pig.ExecTypeProvider: Trying ExecType : LOCAL
+17/10/06 09:44:13 INFO pig.ExecTypeProvider: Trying ExecType : MAPREDUCE
+17/10/06 09:44:13 INFO pig.ExecTypeProvider: Picked MAPREDUCE as the ExecType
+2017-10-06 09:44:13,561 [main] INFO  org.apache.pig.Main - Apache Pig version 0.16.0 (r1746530) compiled Jun 01 2016, 23:10:49
+2017-10-06 09:44:13,561 [main] INFO  org.apache.pig.Main - Logging error messages to: /usr/local/pig/bin/pig_1507263253560.log
+2017-10-06 09:44:13,804 [main] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-10-06 09:44:13,944 [main] ERROR org.apache.pig.Main - ERROR 2997: Encountered IOException. /home/student3/140911308/lab6 (Is a directory)
+Details at logfile: /usr/local/pig/bin/pig_1507263253560.log
+2017-10-06 09:44:13,956 [main] INFO  org.apache.pig.Main - Pig script completed in 460 milliseconds (460 ms)
+hduser@MIT-ICT-LAB8-05:/usr/local/pig/bin$ 
+

@@ -1,0 +1,5 @@
+open
+save
+file undo create 
+saveas close 
+exit
