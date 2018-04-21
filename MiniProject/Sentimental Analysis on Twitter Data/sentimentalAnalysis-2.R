@@ -18,10 +18,10 @@ accessURL <- "http://api.twitter.com/oauth/access_token"
 authURL <- "http://api.twitter.com/oauth/authorize"
 
 # Authonitical keys
-api_key <- 'yVGUxYZG1Ynm0nobBA0yWkQrQ'
-api_secret <- 'LM77745elA46zvyEVEgl8rguywXBeEUQKTJr2szniRYWTZXoZl'
-access_token <- '2454630512-6jDtAQyUzdO8dZUoQodmlsOgWlhHcYJDbNxuDj0'
-access_token_secret <- 'OaU3ivvIe6smoRvHDVaRsqsEUsFPenIsAU6NPSpd9HmGe'
+api_key <- ''
+api_secret <- ''
+access_token <- ''
+access_token_secret <- ''
 
 setup_twitter_oauth(api_key,api_secret,access_token,access_token_secret)
 
