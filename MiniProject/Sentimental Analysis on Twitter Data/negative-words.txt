@@ -33,6 +33,7 @@
 ;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+
 2-faced
 2-faces
 abnormal
@@ -3040,7 +3041,7 @@ nauseate
 nauseates
 nauseating
 nauseatingly
-naïve
+naÃ¯ve
 nebulous
 nebulously
 needless
