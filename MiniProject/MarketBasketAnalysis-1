@@ -44,4 +44,5 @@ rules<-apriori(data=Groceries, parameter=list(supp=0.001,conf = 0.15,minlen=2),
 rules<-sort(rules, decreasing=TRUE,by="confidence")
 inspect(rules[1:5])
 
+
 plot(rules,method="graph",interactive=TRUE,shading=NA)
