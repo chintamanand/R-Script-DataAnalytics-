@@ -14,7 +14,6 @@ boxplot(iris$Sepal.Length ~ iris$Species)
 head(iris)
 barplot(iris$Sepal.Length)
 png("barplotting for sepallength.png",width=400,height=400,res=72)
-
 z<-data.frame(y1=rnorm(100,1,0.3),y2=rnorm(100,0,0.4))
 ch<-kmeans(z,2,iter.max= 15,nstart =1)
 plot(z,col=ch$cluster)
